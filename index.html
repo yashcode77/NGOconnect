@@ -8,6 +8,11 @@
     <script src="https://kit.fontawesome.com/e9cb417b82.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/codecell-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Teko&display=swap');
+        </style>
 </head>
 <body>
     <div id="header">
@@ -18,17 +23,17 @@
                 <ul>
                     <li class="item"><a href="#header">Home</a></li>
                     <li class="item"><a href="#about">About</a></li>
-                    <li class="item"><a href="#proj">Events</a></li>
                     <li class="item"><a href="#team">Team</a></li>
-                    <li class="item"><a href="#">Contact Us</a></li>
+                    <li class="item"><a href="#proj">Events</a></li>
+                    <li class="item"><a href="#footer">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="header-text">
-                <div class="text-typing">
-                    <h1>Welcome to CodeCell</h1>
+                <div>
+                    <h1 class="line anim-typewriter">Welcome to CodeCell</h1>
                 </div>
                 
-                <p>We Create Programming Attitude and Motivation<br>for Advanced Skill Set</p>
+                <p>We Create Programming Attitude and Motivation</p><br><p id="l2">for Advanced Skill Set</p>
             </div>
         </div>
     </div>
@@ -183,6 +188,39 @@
             </div> 
         </div>
     </div>
+    <div class="content-container-2">
+        <div class="container1">
+            <div class="contact-us">
+                <div class="primary-description">
+                    <span>Drop us a line</span>
+                </div>
+                <div class="secondary-description">
+                    <p>Send us your feedbacks, doubts or any bugs that you found.</p>
+                </div>
+                <form class="form-2" method="post" id="submitQueryForm">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="QSWRwY0dw6TQXl8FaMP380MCxE4o6zGC5LzyRkzCn23oJ0QTYHOiizjpTdf6gRm7">
+                    
+                        <input id="name" name="name" type="name" placeholder="Your Name"><br>
+                        <input id="mail" name="mail" type="email" placeholder="Your Email"><br>
+                    
+                    <textarea class="message-box" id="query" name="query" placeholder="Type your message" style="width: 80%"></textarea>
+                    <br>
+                    <button id="submitQuery" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer">
+            <br>
+            <h3>VESIT CodeCell &copy; 2021 All rights reserved.</h3>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, magnam?</p> -->
+         
+                <div class="footer-inner"><div class="footer-section"><span class="footer-title"></span><a href="https://github.com/CMPN-CODECELL" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a><br><a href="https://in.linkedin.com/company/vesit-tinkers-codecell-computer-department" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></div><div class="footer-section"><span class="footer-title"></span><a href="https://www.instagram.com/codecell_vesit/?hl=en" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a><br><a href="https://www.facebook.com/vesitedu/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a></div></div>
+         
+        </div>
+    </footer>
 
 
 </body>
