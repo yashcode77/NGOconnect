@@ -2,7 +2,7 @@
     color: black;
 }
 body{
-    background-color: #82eab2;
+    background-color: #b00202;
 }
 *{
     margin:0;
@@ -32,7 +32,7 @@ body{
     background-size: cover;
   }
   #services{
-    background-color: #82eab2;
+    background-color: #e9dbfc;
   }
 
   header.hero .hero-heading {
@@ -47,7 +47,7 @@ body{
     font-size: 2.5rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    background-color: #00a2ff;
+    background-color: #8cf28c;
   }
   .page-section h3.section-subheading {
     font-size: 1rem;
@@ -443,6 +443,120 @@ opacity: 1;
 }
 
 
+#team{
+    padding: 30px 0;
+    margin: 40px;
+    height: 120vh;
+}
+.team-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+#team h1{
+    font-size: 50px;
+    color: #0b0b0b;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    font: orbitron;
+    /* text-align: right; */
+}
+
+/* map  */
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+    height: 100%;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  #infowindow-content .title {
+    font-weight: bold;
+  }
+  
+  #infowindow-content {
+    display: none;
+  }
+  
+  #map #infowindow-content {
+    display: inline;
+  }
+  
+  .pac-card {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    font-family: Roboto;
+    padding: 0;
+  }
+  
+  #pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+  }
+  
+  .pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+  }
+  
+  .pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  #pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+  }
+  
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+  
+  #title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+  }
+  
+  #target {
+    width: 345px;
+  }
+  
+  
 
 
 
