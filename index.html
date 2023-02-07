@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>nConnect</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preload" href="https://cdn.givind.org/_next/static/css/2dd37bd631776785.css" as="style"/><link rel="stylesheet" href="https://cdn.givind.org/_next/static/css/2dd37bd631776785.css" data-n-g=""/> -->
+    <!-- ===== Link Swiper's CSS ===== -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,7 +19,8 @@
       crossorigin="anonymous"
     />
     <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
-    <script type="module" src="./index.js"></script>
+    <!-- <script type="module" src="index.js"></script> -->
+    
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
@@ -59,7 +67,7 @@
             <input
               class="form-control me-2"
               type="search"
-              placeholder="Search"
+              placeholder="Search for NGOs"
               aria-label="Search"
             />
             <button class="btn btn-outline-success" type="submit">
@@ -363,23 +371,53 @@
 
     <!-- End of login -->
 
+    <!-- Sliding card  -->
+
+    
+  
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  
+  
+
+    <!-- End of slidinfg card  -->
+
     <!-- Cards -->
 
     <div class="container px-4 py-5" id="custom-cards">
-      <h2 class="pb-2 border-bottom">Custom cards</h2>
+      <h2 class="pb-2 border-bottom">Posts</h2>
   
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(https://c1.wallpaperflare.com/preview/207/957/147/dark-gloomy-books-pages-paper-read.jpg);">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Require class 10 books</h3>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="https://projectheena.com/uploads/ngo/38145397673273/profileImage/images/aai-caretaker-ngo.PNG" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
                 <li class="d-flex align-items-center me-3">
                   <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                  <small>Earth</small>
+                  <small>AAI Caretaker</small>
                 </li>
                 <li class="d-flex align-items-center">
                   <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
@@ -391,16 +429,16 @@
         </div>
   
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(https://im.whatshot.in/img/2017/Nov/in-article-1511696727.jpg);">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Need clothes for children</h3>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
                   <img src="Images/Rpb_clothing_icon.svg.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
                 <li class="d-flex align-items-center me-3">
                   <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                  <small>Pakistan</small>
+                  <small>Hope foundation</small>
                 </li>
                 <li class="d-flex align-items-center">
                   <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
@@ -412,16 +450,16 @@
         </div>
   
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(https://media.istockphoto.com/photos/3d-rendering-of-old-rocking-chair-illuminated-by-light-ray-at-dark-picture-id1363888687?k=20&m=1363888687&s=612x612&w=0&h=XxB3v70QfPPJFcp1-p3bAH8blbtXflcGt4gOKgs_5o4=);">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">We need funds for care taking of old age people</h3>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="https://img.freepik.com/free-vector/logo-made-with-wavy-human-silhouettes_1025-394.jpg?w=2000" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
                 <li class="d-flex align-items-center me-3">
                   <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                  <small>California</small>
+                  <small>Elder Care Foundation</small>
                 </li>
                 <li class="d-flex align-items-center">
                   <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
@@ -433,8 +471,22 @@
         </div>
       </div>
     </div>
+    
 
     <!-- End of cards -->
+
+    <div class="pb-3 row"><div class="hide-for-mobile"><a href="/start-form"> <img class=" w-100" src="https://cdn.givind.org/static/images/ngodirectory/image-panel/giving-journey-banner-desktop.jpg" alt="meet the one"></a></div></div>
+    <!-- posts  -->
+
+    
+
+    
+
+    
+
+    
+
+    <!-- end of posts  -->
 
     <!-- --------events--------- -->
     <div id="team">
@@ -459,8 +511,10 @@
           </div>
       </div>
 
+      
+
       <!-- map -->
-      <body>
+      <!-- <body>
         <input
           id="pac-input"
           class="controls"
@@ -491,5 +545,175 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <!-- chatbot  -->
+
+    <div class="chat-box">
+      <div class="chat-box-header">
+          <h3>Message Us</h3>
+          <p><i class="fa fa-times"></i></p>
+      </div>
+      <div class="chat-box-body">
+          <div class="chat-box-body-send">
+              <p>This is my message.</p>
+              <span>12:00</span>
+          </div>
+          <div class="chat-box-body-receive">
+              <p>This is my message.</p>
+              <span>12:00</span>
+          </div>
+          <div class="chat-box-body-receive">
+              <p>This is my message.</p>
+              <span>12:00</span>
+          </div>
+          <div class="chat-box-body-send">
+              <p>This is my message.</p>
+              <span>12:00</span>
+          </div>
+          <div class="chat-box-body-send">
+              <p>This is my message.</p>
+              <span>12:00</span>
+          </div>
+          <div class="chat-box-body-receive">
+              <p>This is my message.</p>
+              <span>12:00</span>
+          </div>
+          <div class="chat-box-body-receive">
+              <p>This is my message.</p>
+              <span>12:00</span>
+          </div>
+          <div class="chat-box-body-send">
+              <p>This is my message.</p>
+              <span>12:00</span>
+          </div>
+      </div>
+      <div class="chat-box-footer">
+          <button id="addExtra"><i class="fa fa-plus"></i></button>
+          <input placeholder="Enter Your Message" type="text" />
+          <i class="send far fa-paper-plane"></i>
+      </div>
+  </div>
+  <div class="chat-button"><span></span></div>
+  <div class="modal">
+      <div class="modal-content">
+          <span class="modal-close-button">&times;</span>
+          <h1>Add What you want here.</h1>
+      </div>
+  </div>
+
+    <!-- end of chatbot  -->
+
+    <!-- FAQ -->
+
+    
+
+    <!-- end of FAQ  -->
+
+    <!-- footer  -->
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Donate</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Affiliated NGOs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Volunteer</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Roles</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Need help?</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Offerings</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2022 NGOConnect, org. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- end of footer  -->
+    <!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! How can I help you" name="category">
+        <option value="WebDevelopment">Website Development ?</option>
+        <option value="DigitalMarketing">Digital Marketing ?</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="WebDevelopment">
+          <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">    
+        </div>
+        <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Please, enter your company name"> 
+        </div>
+      </div>
+
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Conform">
+        <option value="Yes">Conform</option>
+      </select>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
   </body>
+  <script src="index.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </html>
